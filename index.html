@@ -1,0 +1,114 @@
+<!--Si escribimos html:5 nos da en automatico, todas las partes que componen una página web
+el cinco se refiere a la versión con la que estamos trabajando-->
+<!DOCTYPE html>
+<!--DOCTYPE html, hace referencia al tipo de archivo-->
+<html lang="en">
+<!--html es la etiqueta
+lang es el atributo y 
+"en" es el valor-->
+
+<!--head--es toda la información para el navegador-->
+<head>
+    <!--UTP se refiere a los caracteres internacionales
+    que están activos, en este caso es español-->
+    <meta charset="UTF-8">
+    <!--las etiquetas meta, hacen referencia a algo extra-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--en un trabajo nos deben dar el titulo de la página -->
+    <title>Mi primera pagina web</title>
+    <!--title es la etiqueta para asignarle el titulo que se mostrará en mi navegador-->
+
+
+    <!--Para vincular el CSS con el HTML se tiene que linkear-->
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+
+<body>
+
+    <!--header es una etiqueta propia de html:5, la cual se refiere al encabezado de la página web-->
+    <header>
+         <!--la etiqueta div sirve para distribuir los elementos de la página web, funcionan como si fueran cajas-->
+        <div>
+            <img src="./assets/img/logo.png" alt="">
+        </div>
+
+        <!--nav es una etiqueta para crear un menú de navegación-->
+        <nav>
+            <!--La etiqueta ul es para hacer listas SN ORDEN, ol es para poner númeración-->
+        <ul>
+            <!--li es para hacer cada uno de los items-->
+            <a href="https://junior.org.ar/"> <li>HOME</li> </a>
+            <!--la etiqueta a es para crear un enlace, href es para colocar la url que quiero que se abra al dar click en ese boton-->
+            <a href="https://junior.org.ar/nosotros/"><li>NOSOTROS</li></a> 
+            <a href="https://junior.org.ar/inscripciones/"><li>INSCRIPCIONES</li></a>
+            <a href="https://junior.org.ar/novedades/"><li>NOVEDADES</li></a>
+            <a href="https://junior.org.ar/sumate/"><li>SUMATE</li></a>
+            <a href="https://junior.org.ar/donantes/"><li>DONÁ</li></a>
+            <a href="https://junior.org.ar/contacto/"><li>CONTACTO</li></a>
+          
+       </ul>
+        </nav>
+
+    </header>
+
+
+<div>
+    <h1>¿Quienes somos?</h1>
+    <p>Somos una de las ONG más grandes del mundo.
+    A través del aprendizaje activo en educación financiera, formación para el trabajo y emprendimiento, preparamos e inspiramos a los 
+    jóvenes para que sean protagonistas de su futuro.</p>
+</div> 
+
+       
+<!--Aquí vamos a realizar un selector de clase, el cual permite agrupar varias cajas para despues modificarlas en conjunto -->
+<div class="contenedor">
+    <div class="caja">
+        <img src="./assets/img/desafio.png" alt="">
+        <!--el atributo src se refiere a la ruta donde se encuentra la imagen, para empezar la ruta se empieza con ./ mientras que un unico punto . quiere decir que es donde me encuentro-->
+        <!--por su parte el atributo alt es un texto alternativo, que ponemos como referencia a la imagen-->
+        <h1>EL DESAFÍO</h1>
+        <!--la etiqueta h es para asignar titulos y subtitulos-->
+        <!--la etiqueta p es para crear párrafos-->
+        <p>Insertos en la cuarta revolución industrial, la tecnología irrumpe en todos los ámbitos de la vida: aparecen la robótica, la biotecnología, la inteligencia artificial. Desaparecen profesiones y surgen nuevas.</p>
+        <!--etiqueta br_es para salto de linea -->
+        <!--se puede colocar solo br, sin etiqueta de cierre, ya que hay etiquetas que se abren pero no se cierran, porque no tienen nada dentro-->
+    </div>    
+    <div class="caja">
+        <img src="./assets/img/solucion.jpg" alt="">
+        <h1>LA SOLUCIÓN</h1>
+        <p>Desde hace 100 años, promovemos una actitud emprendedora en millones de jóvenes para que se sientan protagonistas y emprendedores de sus propias vidas.</p>    
+    </div>
+    <div class="caja">
+        <img src="./assets/img/impacto.jpg" alt="Desafio de Junior">
+        <h1>IMPACTO</h1>
+        <p>Trabajamos en cientos de escuelas cada año formando a miles de jóvenes para que estén mejor preparados para el futuro. </p>
+    </div>
+</div>
+
+
+
+
+    <!--la etiqueta footer sirve para incluir el pie de pagina.-->
+    <footer>
+        <p> Conoce nuestra Política de privacidad | ©2022 Junior Achievement Argentina. Todos los derechos reservados. </p>
+    </footer>
+
+</body>
+</html>
+
+<!--hipervinculo, vinculo porque es un vinculo, 
+hiper porque vas para allá -->
+<!--href es la referencia-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
