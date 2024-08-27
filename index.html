@@ -21,10 +21,16 @@ lang es el atributo y
 
     <!--Para vincular el CSS con el HTML se tiene que linkear-->
     <link rel="stylesheet" href="./assets/css/style.css">
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 
 
+
+
 <body>
+
 
     <!--header es una etiqueta propia de html:5, la cual se refiere al encabezado de la página web-->
     <header>
@@ -40,11 +46,11 @@ lang es el atributo y
             <!--li es para hacer cada uno de los items-->
             <a href="https://junior.org.ar/"> <li>HOME</li> </a>
             <!--la etiqueta a es para crear un enlace, href es para colocar la url que quiero que se abra al dar click en ese boton-->
-            <a href="https://junior.org.ar/nosotros/"><li>NOSOTROS</li></a> 
+            <a href="#nosotros"><li>NOSOTROS</li></a> 
             <a href="https://junior.org.ar/inscripciones/"><li>INSCRIPCIONES</li></a>
             <a href="https://junior.org.ar/novedades/"><li>NOVEDADES</li></a>
             <a href="https://junior.org.ar/sumate/"><li>SUMATE</li></a>
-            <a href="https://junior.org.ar/donantes/"><li>DONÁ</li></a>
+            <a href="https://junior.org.ar/donantes/"><li>DONA</li></a>
             <a href="https://junior.org.ar/contacto/"><li>CONTACTO</li></a>
           
        </ul>
@@ -53,37 +59,78 @@ lang es el atributo y
     </header>
 
 
-<div>
-    <h1>¿Quienes somos?</h1>
-    <p>Somos una de las ONG más grandes del mundo.
-    A través del aprendizaje activo en educación financiera, formación para el trabajo y emprendimiento, preparamos e inspiramos a los 
-    jóvenes para que sean protagonistas de su futuro.</p>
-</div> 
+<!--Carrusel-->
+<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./assets/img/uno.png" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="./assets/img/dos.png" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="./assets/img/tres.png" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Anterior</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Siguiente</span>
+    </button>
+  </div>
 
-       
+
+
+
+
+    <div class="presentacion">
+        <h1>¿Quienes somos?</h1>
+        <p>Somos una de las ONG más grandes del mundo.
+        A través del aprendizaje activo en educación financiera, formación para el trabajo y emprendimiento, preparamos e inspiramos a los 
+        jóvenes para que sean protagonistas de su futuro.</p>
+    </div> 
+
+   
+
+    
 <!--Aquí vamos a realizar un selector de clase, el cual permite agrupar varias cajas para despues modificarlas en conjunto -->
-<div class="contenedor">
+<div class="contenedor">     
     <div class="caja">
         <img src="./assets/img/desafio.png" alt="">
         <!--el atributo src se refiere a la ruta donde se encuentra la imagen, para empezar la ruta se empieza con ./ mientras que un unico punto . quiere decir que es donde me encuentro-->
         <!--por su parte el atributo alt es un texto alternativo, que ponemos como referencia a la imagen-->
         <h1>EL DESAFÍO</h1>
+        <button onclick="mostrarOcultarTexto ('elDesafioP')";>Mostrar/Ocultar Texto</button>
         <!--la etiqueta h es para asignar titulos y subtitulos-->
         <!--la etiqueta p es para crear párrafos-->
-        <p>Insertos en la cuarta revolución industrial, la tecnología irrumpe en todos los ámbitos de la vida: aparecen la robótica, la biotecnología, la inteligencia artificial. Desaparecen profesiones y surgen nuevas.</p>
+        <p id="elDesafioP">Insertos en la cuarta revolución industrial, la tecnología irrumpe en todos los ámbitos de la vida: aparecen la robótica, la biotecnología, la inteligencia artificial. Desaparecen profesiones y surgen nuevas.</p>
         <!--etiqueta br_es para salto de linea -->
         <!--se puede colocar solo br, sin etiqueta de cierre, ya que hay etiquetas que se abren pero no se cierran, porque no tienen nada dentro-->
     </div>    
     <div class="caja">
         <img src="./assets/img/solucion.jpg" alt="">
         <h1>LA SOLUCIÓN</h1>
-        <p>Desde hace 100 años, promovemos una actitud emprendedora en millones de jóvenes para que se sientan protagonistas y emprendedores de sus propias vidas.</p>    
+        <button onclick="mostrarOcultarTexto ('laSolucionP')";>Mostrar/Ocultar Texto</button>
+        <p id="laSolucionP">Desde hace 100 años, promovemos una actitud emprendedora en millones de jóvenes para que se sientan protagonistas y emprendedores de sus propias vidas.</p>    
     </div>
     <div class="caja">
         <img src="./assets/img/impacto.jpg" alt="Desafio de Junior">
         <h1>IMPACTO</h1>
-        <p>Trabajamos en cientos de escuelas cada año formando a miles de jóvenes para que estén mejor preparados para el futuro. </p>
+        <button onclick="mostrarOcultarTexto ('impactoP')";>Mostrar/Ocultar Texto</button>
+        <p id="impactoP">Trabajamos en cientos de escuelas cada año formando a miles de jóvenes para que estén mejor preparados para el futuro. </p>
     </div>
+</div>
+
+
+<!--id es un identificador de clase, y es único -->
+<div id="nosotros">
+    <!--Con la etiqueta IFRAME se incorporan fácilmente videos de youtube y ubicaciones de Google maps-->
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.0545070419303!2d-58.467185624259834!3d-34.602783172954574!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a33533433603c1%3A0x45810ad3a92f29c7!2sJunior%20Achievement%20Argentina!5e0!3m2!1ses-419!2smx!4v1724637996369!5m2!1ses-419!2smx" width="560" height="315" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/CAvju4e-EPk?si=pAR1WbHSi7UgLn3x" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 </div>
 
 
@@ -94,21 +141,10 @@ lang es el atributo y
         <p> Conoce nuestra Política de privacidad | ©2022 Junior Achievement Argentina. Todos los derechos reservados. </p>
     </footer>
 
-</body>
-</html>
-
-<!--hipervinculo, vinculo porque es un vinculo, 
-hiper porque vas para allá -->
-<!--href es la referencia-->
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
     
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+<!--para ligar js-->
+<script src="./assets/js/codigo.js"></script>
 </body>
 </html>
